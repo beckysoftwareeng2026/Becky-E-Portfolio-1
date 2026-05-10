@@ -1,3 +1,3 @@
 function toggleModal() {
-    document.body.classList += "modal--open"
+    document.body.classList.toggle(modal--open)
 }
