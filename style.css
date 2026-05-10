@@ -126,6 +126,7 @@ textarea:focus {
 
 .text--purple {
   color: #6030b1;
+  font-weight: 1000;
 }
 
 section:nth-child(even) {
