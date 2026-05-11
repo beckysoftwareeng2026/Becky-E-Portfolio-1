@@ -8,6 +8,16 @@
     <script src="https://kit.fontawesome.com/ba6fb18e67.js"
       crossorigin="anonymous"></script>
     <script src=" index.js" defer></script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "f6i8YNXr8vT28SPdI",
+      });
+   })();
+</script>
   </head>
   <body>
     <section id="about-me">
@@ -107,7 +117,7 @@
                 <h3 class=".modal__sub-title modal__sub-title--contact">
                   I'm currently open to new oppurtunities.
                 </h3>
-                <form id="contact__form" action>
+                <form id="contact__form" onsubmit="contact(event)">
                   <div class="form__item">
                     <label class="form__item--label"Name</label>
                       <input class="input" name="user__name"
@@ -171,10 +181,10 @@
                 <a href class="about-me__link">
                   <i class="fa-brands fa-github"></i>
                 </a>
-                <a href class="about-me__link">
+                <a href class="about-me__link" onclick="toggleModal()">
                   <i class="fa-regular fa-envelope"></i>
                 </a>
-                <a href="#" class="about-me__link" on click="toggleModal()">
+                <a href="#" class="about-me__link">
                   <i class="fa-solid fa-file-pdf"></i>
                 </a>
               </div>

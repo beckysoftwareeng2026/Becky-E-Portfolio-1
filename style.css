@@ -63,6 +63,21 @@ i:hover {
   left: 0;
 }
 
+nav,
+.scroll,
+.header {
+  opacity: 1;
+  visibility: visible;
+  transition: all 600ms 800ms;
+}
+
+.modal--open nav,
+.modal-- .scroll,
+.modal-- .header {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 400ms;
+}
 li {
   list-style: none;
 }
@@ -507,6 +522,10 @@ MODAL
   font-weight: 700;
   text-align: center;
   padding: 50ox;
+}
+
+.modal__overlay--visible {
+  z-index: 1;
 }
 
 .fa-spinner {
